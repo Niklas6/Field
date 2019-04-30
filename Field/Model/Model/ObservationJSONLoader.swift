@@ -17,7 +17,7 @@ class ObservationJSONLoader {
             let data = try? Data(contentsOf: URL(fileURLWithPath: path)) {
             observation = ObservationJSON.parse(data)
         }
-        
+        return observation
     }
     
 }

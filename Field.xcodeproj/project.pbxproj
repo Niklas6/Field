@@ -12,6 +12,8 @@
 		021905E22278C174009C7080 /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021905E12278C174009C7080 /* Observation.swift */; };
 		021905E42278C527009C7080 /* ObservationJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021905E32278C527009C7080 /* ObservationJSON.swift */; };
 		021905E62278CF90009C7080 /* ObservationJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021905E52278CF90009C7080 /* ObservationJSONLoader.swift */; };
+		021905E82278D41C009C7080 /* ObservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021905E72278D41C009C7080 /* ObservationsViewController.swift */; };
+		021905EA2278D48B009C7080 /* ObservationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021905E92278D48B009C7080 /* ObservationDetailViewController.swift */; };
 		02745FD022777C2E00EF5A1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02745FCF22777C2E00EF5A1D /* AppDelegate.swift */; };
 		02745FD522777C2E00EF5A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02745FD322777C2E00EF5A1D /* Main.storyboard */; };
 		02745FD722777C2F00EF5A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02745FD622777C2F00EF5A1D /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 		021905E12278C174009C7080 /* Observation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
 		021905E32278C527009C7080 /* ObservationJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationJSON.swift; sourceTree = "<group>"; };
 		021905E52278CF90009C7080 /* ObservationJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationJSONLoader.swift; sourceTree = "<group>"; };
+		021905E72278D41C009C7080 /* ObservationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationsViewController.swift; sourceTree = "<group>"; };
+		021905E92278D48B009C7080 /* ObservationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationDetailViewController.swift; sourceTree = "<group>"; };
 		02745FCC22777C2E00EF5A1D /* Field.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Field.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02745FCF22777C2E00EF5A1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02745FD422777C2E00EF5A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -120,10 +124,12 @@
 			children = (
 				021905D82278BC76009C7080 /* Model */,
 				02745FCF22777C2E00EF5A1D /* AppDelegate.swift */,
+				021905E72278D41C009C7080 /* ObservationsViewController.swift */,
 				02745FD322777C2E00EF5A1D /* Main.storyboard */,
 				02745FD622777C2F00EF5A1D /* Assets.xcassets */,
 				02745FD822777C2F00EF5A1D /* LaunchScreen.storyboard */,
 				02745FDB22777C2F00EF5A1D /* Info.plist */,
+				021905E92278D48B009C7080 /* ObservationDetailViewController.swift */,
 			);
 			path = Field;
 			sourceTree = "<group>";
@@ -278,10 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				021905EA2278D48B009C7080 /* ObservationDetailViewController.swift in Sources */,
 				021905E02278BF40009C7080 /* Obs.swift in Sources */,
 				021905E22278C174009C7080 /* Observation.swift in Sources */,
 				021905E62278CF90009C7080 /* ObservationJSONLoader.swift in Sources */,
 				021905E42278C527009C7080 /* ObservationJSON.swift in Sources */,
+				021905E82278D41C009C7080 /* ObservationsViewController.swift in Sources */,
 				02745FD022777C2E00EF5A1D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
