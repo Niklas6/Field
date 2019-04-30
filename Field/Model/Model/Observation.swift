@@ -8,12 +8,19 @@
 
 import Foundation
 
-struct Observation {
+
+ 
+ 
+ struct Observation {
     let classification: Obs
     let title: String
     let description: String
     let date: Date
     
+    
+    
+    
+
     init(classification: Obs, title: String, description: String, date: Date) {
         self.classification = classification
         self.title = title
@@ -28,5 +35,5 @@ struct Observation {
             return nil
         }
     }
-    
+
 }

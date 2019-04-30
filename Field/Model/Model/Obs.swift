@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum Obs: String {
+enum Obs: String, Codable {
     case amphibian
     case bird
     case fish
@@ -20,4 +20,17 @@ enum Obs: String {
     var image : UIImage? {
         return UIImage(named: self.rawValue + "icon")
     }
+}
+
+
+struct Observation1: Codable {
+    var classification: Obs
+    var title: String
+    var description: String
+    var date: Date
+}
+
+struct Observations1: Codable {
+    var status: String
+    var observations: [Observation1]
 }

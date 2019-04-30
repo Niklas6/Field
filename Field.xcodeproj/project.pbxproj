@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		021905DE2278BDE2009C7080 /* field_observations.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 021905DD2278BDE2009C7080 /* field_observations.webarchive */; };
+		021905DE2278BDE2009C7080 /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = 021905DD2278BDE2009C7080 /* field_observations.json */; };
 		021905E02278BF40009C7080 /* Obs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021905DF2278BF40009C7080 /* Obs.swift */; };
 		021905E22278C174009C7080 /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021905E12278C174009C7080 /* Observation.swift */; };
 		021905E42278C527009C7080 /* ObservationJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021905E32278C527009C7080 /* ObservationJSON.swift */; };
@@ -41,7 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		021905DD2278BDE2009C7080 /* field_observations.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = field_observations.webarchive; sourceTree = "<group>"; };
+		021905DD2278BDE2009C7080 /* field_observations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
 		021905DF2278BF40009C7080 /* Obs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obs.swift; sourceTree = "<group>"; };
 		021905E12278C174009C7080 /* Observation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
 		021905E32278C527009C7080 /* ObservationJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationJSON.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		021905D82278BC76009C7080 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				021905DD2278BDE2009C7080 /* field_observations.webarchive */,
+				021905DD2278BDE2009C7080 /* field_observations.json */,
 				021905DF2278BF40009C7080 /* Obs.swift */,
 				021905E12278C174009C7080 /* Observation.swift */,
 				021905E32278C527009C7080 /* ObservationJSON.swift */,
@@ -128,11 +128,11 @@
 				02745FCF22777C2E00EF5A1D /* AppDelegate.swift */,
 				021905EB2278E287009C7080 /* ObservationTableViewCell.swift */,
 				021905E72278D41C009C7080 /* ObservationsViewController.swift */,
+				021905E92278D48B009C7080 /* ObservationDetailViewController.swift */,
 				02745FD322777C2E00EF5A1D /* Main.storyboard */,
 				02745FD622777C2F00EF5A1D /* Assets.xcassets */,
 				02745FD822777C2F00EF5A1D /* LaunchScreen.storyboard */,
 				02745FDB22777C2F00EF5A1D /* Info.plist */,
-				021905E92278D48B009C7080 /* ObservationDetailViewController.swift */,
 			);
 			path = Field;
 			sourceTree = "<group>";
@@ -260,7 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02745FDA22777C2F00EF5A1D /* LaunchScreen.storyboard in Resources */,
-				021905DE2278BDE2009C7080 /* field_observations.webarchive in Resources */,
+				021905DE2278BDE2009C7080 /* field_observations.json in Resources */,
 				02745FD722777C2F00EF5A1D /* Assets.xcassets in Resources */,
 				02745FD522777C2E00EF5A1D /* Main.storyboard in Resources */,
 			);

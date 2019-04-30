@@ -12,10 +12,9 @@ class ObservationsViewController: UIViewController, UITableViewDelegate, UITable
 
     @IBOutlet weak var ObservationsTableView: UITableView!
     
-    
-    
-    let Observations = ObservationJSONLoader.load(fileName: "field_observations")
-    
+    let jsonFileName = "field_observations"
+    var Obse: Observations1?
+    //let Observations = ObservationJSONLoader.load(fileName: "field_observations")
     let dateFormatter = DateFormatter()
     
     override func viewDidLoad() {
@@ -24,7 +23,9 @@ class ObservationsViewController: UIViewController, UITableViewDelegate, UITable
         
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .medium
-
+        
+        Obse = ObservationJSONLoader.load(fileName: jsonFileName)
+        
         // Do any additional setup after loading the view.
     }
     
@@ -34,18 +35,18 @@ class ObservationsViewController: UIViewController, UITableViewDelegate, UITable
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("hier")
-        return Observations.count
+        return Obse?.observations.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ObservationCell", for: indexPath)
+        
         if let cell = cell as? ObservationTableViewCell {
-            let Observation = Observations[indexPath.row]
+            let Observation = Obse?.observations[indexPath.row]{
             cell.ObserveIconImageView.image = Observation.classification.image
             cell.titleLabel.text = Observation.title
             cell.dateLabel.text = dateFormatter.string(from: Observation.date)
-            
+            }
         }
         print("hi")
         return cell
@@ -54,7 +55,7 @@ class ObservationsViewController: UIViewController, UITableViewDelegate, UITable
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? ObservationDetailViewController,
             let row = ObservationsTableView.indexPathForSelectedRow?.row {
-            destination.Observation = Observations[row]
+            destination.Observation = Observations1[row]
         
         }
     }
