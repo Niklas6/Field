@@ -12,7 +12,7 @@ class ObservationsViewController: UIViewController, UITableViewDelegate, UITable
 
     @IBOutlet weak var ObservationsTableView: UITableView!
     
-    let jsonFileName = "field_observations"
+    let jsonFileName = "field"
     var Obse: Observations1?
     //let Observations = ObservationJSONLoader.load(fileName: "field_observations")
     let dateFormatter = DateFormatter()
@@ -25,6 +25,7 @@ class ObservationsViewController: UIViewController, UITableViewDelegate, UITable
         dateFormatter.timeStyle = .medium
         
         Obse = ObservationJSONLoader.load(fileName: jsonFileName)
+        print(Obse?.observations.count ?? 0)
         
         // Do any additional setup after loading the view.
     }
@@ -40,23 +41,22 @@ class ObservationsViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ObservationCell", for: indexPath)
-        
-        if let cell = cell as? ObservationTableViewCell {
-            let Observation = Obse?.observations[indexPath.row]{
-            cell.ObserveIconImageView.image = Observation.classification.image
+        //Obse?.observations[indexPath.row]
+        if let cell = cell as? ObservationTableViewCell,
+            let Observation = Obse?.observations[indexPath.row] {
             cell.titleLabel.text = Observation.title
             cell.dateLabel.text = dateFormatter.string(from: Observation.date)
-            }
+            cell.ObserveIconImageView.image = Observation.classification.image
+            
         }
-        print("hi")
+        print("kk")
         return cell
     }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? ObservationDetailViewController,
-            let row = ObservationsTableView.indexPathForSelectedRow?.row {
-            destination.Observation = Observations1[row]
-        
+            let selectedIndexPath = ObservationsTableView.indexPathForSelectedRow {
+            destination.Observation = Obse?.observations[selectedIndexPath.row]
         }
     }
 

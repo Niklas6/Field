@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		021905DE2278BDE2009C7080 /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = 021905DD2278BDE2009C7080 /* field_observations.json */; };
+		021905DE2278BDE2009C7080 /* field1.json in Resources */ = {isa = PBXBuildFile; fileRef = 021905DD2278BDE2009C7080 /* field1.json */; };
 		021905E02278BF40009C7080 /* Obs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021905DF2278BF40009C7080 /* Obs.swift */; };
 		021905E22278C174009C7080 /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021905E12278C174009C7080 /* Observation.swift */; };
 		021905E42278C527009C7080 /* ObservationJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021905E32278C527009C7080 /* ObservationJSON.swift */; };
@@ -21,6 +21,7 @@
 		02745FDA22777C2F00EF5A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02745FD822777C2F00EF5A1D /* LaunchScreen.storyboard */; };
 		02745FE522777C2F00EF5A1D /* FieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02745FE422777C2F00EF5A1D /* FieldTests.swift */; };
 		02745FF022777C2F00EF5A1D /* FieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02745FEF22777C2F00EF5A1D /* FieldUITests.swift */; };
+		02CA0B542279F88E000FAD29 /* field.json in Resources */ = {isa = PBXBuildFile; fileRef = 02CA0B532279F88E000FAD29 /* field.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		021905DD2278BDE2009C7080 /* field_observations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
+		021905DD2278BDE2009C7080 /* field1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = field1.json; sourceTree = "<group>"; };
 		021905DF2278BF40009C7080 /* Obs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obs.swift; sourceTree = "<group>"; };
 		021905E12278C174009C7080 /* Observation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
 		021905E32278C527009C7080 /* ObservationJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationJSON.swift; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		02745FEB22777C2F00EF5A1D /* FieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02745FEF22777C2F00EF5A1D /* FieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldUITests.swift; sourceTree = "<group>"; };
 		02745FF122777C2F00EF5A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02CA0B532279F88E000FAD29 /* field.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +93,8 @@
 		021905D82278BC76009C7080 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				021905DD2278BDE2009C7080 /* field_observations.json */,
+				021905DD2278BDE2009C7080 /* field1.json */,
+				02CA0B532279F88E000FAD29 /* field.json */,
 				021905DF2278BF40009C7080 /* Obs.swift */,
 				021905E12278C174009C7080 /* Observation.swift */,
 				021905E32278C527009C7080 /* ObservationJSON.swift */,
@@ -260,7 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				02745FDA22777C2F00EF5A1D /* LaunchScreen.storyboard in Resources */,
-				021905DE2278BDE2009C7080 /* field_observations.json in Resources */,
+				02CA0B542279F88E000FAD29 /* field.json in Resources */,
+				021905DE2278BDE2009C7080 /* field1.json in Resources */,
 				02745FD722777C2F00EF5A1D /* Assets.xcassets in Resources */,
 				02745FD522777C2E00EF5A1D /* Main.storyboard in Resources */,
 			);
